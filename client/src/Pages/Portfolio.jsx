@@ -4,9 +4,6 @@ import Animation from "../Animations/Animation.json";
 import CustomButton from "../Components/CustomButton";
 import { Link } from "react-router-dom";
 
-
-
-
 const Portfolio = () => {
   return (
     <>
@@ -31,7 +28,6 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-     
     </>
   );
 };
