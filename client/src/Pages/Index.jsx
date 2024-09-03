@@ -8,9 +8,11 @@ const Index = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Portfolio />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/know" element={<Add1/>}/>
+        
+          <Route path="/" element={<Portfolio />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/know" element={<Add1 />} />
+        
       </Routes>
       <Routes>
         <Route path="portfolio" element={<Portfolio />} />

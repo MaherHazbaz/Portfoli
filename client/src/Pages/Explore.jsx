@@ -35,7 +35,7 @@ const Explore = () => {
                 </p>
               </div>
               <Link to={"/know"}>
-                <div className="text-lg py-8 grid justify-center">
+                <div className="text-lg py-8 grid justify-center a">
                   <CustomButton button={"Get To Know More !"} />
                 </div>
               </Link>
