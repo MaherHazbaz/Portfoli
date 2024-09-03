@@ -7,7 +7,7 @@ import PhotoFrame from "../Components/PhotoFrame";
 import profile from "../Images/profile.jpg";
 import CustomButton from "../Components/CustomButton";
 import { PiInstagramLogo } from "react-icons/pi";
-
+import insta from "../Animations/insta.json";
 
 const Explore = () => {
   const nav = [{ path: "portfolio", icon: <IoArrowBackCircleOutline /> }];
@@ -21,7 +21,7 @@ const Explore = () => {
         <div className="text-7xl grid sm:grid-cols-1 md:grid-cols-2 justify-end p-7 font-thin  ">
           <div>
             <h1>Maher Hazbaz</h1>
-            <h2 className="text-3xl  ">WebDeveloper</h2>
+            <h2 className="text-3xl grid justify-items-center ">WebDeveloper</h2>
             <div className="grid justify-start lg:grid-cols-1 space-x-28 p-6  text-3xl font-thin space-y- ">
               <div className="grid grid-flow-row ">
                 <p>
@@ -40,18 +40,16 @@ const Explore = () => {
                 </div>
               </Link>
             </div>
-            <div className="flex p-7 text-3xl   ">
-              Follow me On Instagram
-              <div className="py-1.5 px-4 ">
-                <a href="https://www.instagram.com/maherhazbaz?igsh=bHpha2VwZ2l6NGUz">
-                  <button>
-                    <PiInstagramLogo />
-                  </button>
-                </a>
-              </div>
-            </div>
+            <a href="https://www.instagram.com/maherhazbaz?igsh=bHpha2VwZ2l6NGUz">
+              <button className="flex items-start  ">
+                <div className="p-7 text-3xl">Follow me On Instagram</div>
+                <div className="size-64 ">
+                  <Lottie animationData={insta} />
+                </div>
+              </button>
+            </a>
           </div>
-          <div className="grid justify text-6xl  ">
+          <div className="grid justify text-6xl relative -mt-32 ">
             <PhotoFrame src={profile} />
           </div>
         </div>
