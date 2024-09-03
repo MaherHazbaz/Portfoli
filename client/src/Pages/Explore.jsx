@@ -42,8 +42,8 @@ const Explore = () => {
             </div>
             <a href="https://www.instagram.com/maherhazbaz?igsh=bHpha2VwZ2l6NGUz">
               <button className="flex items-start  ">
-                <div className="p-7 text-3xl">Follow me On Instagram</div>
-                <div className="size-64 ">
+                <div className="py-5 px-10 text-2xl">Follow me On Instagram</div>
+                <div className="size-52 ">
                   <Lottie animationData={insta} />
                 </div>
               </button>
