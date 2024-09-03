@@ -3,7 +3,7 @@ import React from "react";
 const HexagonPhotoFrame = ({ src, alt, title }) => {
   return (
     <div className="relative flex justify-center items-center p-6 max-w-sm mx-auto">
-      <div className="relative w-[450px] h-[600px] group">
+      <div className="relative w-[500px] h-[700px] group">
         {/* Background with glowing border and pulsing effect */}
         <div className="absolute inset-0 bg-black clip-hexagon group-hover:rotate-45 transition-transform duration-700 ease-in-out">
           <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-pulse"></div>
