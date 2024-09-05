@@ -6,15 +6,14 @@ import { Link } from "react-router-dom";
 import FadeTransition from "../Components/FadeTransition";
 import { useState } from "react";
 import { GiAnimalSkull } from "react-icons/gi";
-
+import bird from "../Animations/bird.json";
 
 const Portfolio = () => {
   const [show, setShow] = useState(true);
   return (
     <>
+      
       <div className="text-4xl p-2">
-       
-
         <FadeTransition in={show}>
           <div className="grid grid-flow-row">
             <div className=" grid  justify-center p-5">

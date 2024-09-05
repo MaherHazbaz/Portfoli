@@ -1,0 +1,57 @@
+/* src/styles/transition.css */
+
+/* Fade Transition */
+.fade-enter {
+    @apply opacity-0;
+}
+
+.fade-enter-active {
+    @apply opacity-100 transition-opacity duration-300;
+}
+
+.fade-exit {
+    @apply opacity-100;
+}
+
+.fade-exit-active {
+    @apply opacity-0 transition-opacity duration-300;
+}
+
+/* Slide Transition */
+.slide-enter {
+    @apply opacity-0 -translate-x-full;
+    /* Start off-screen to the left */
+}
+
+.slide-enter-active {
+    @apply opacity-100 translate-x-0 transition-transform duration-500 ease-in-out;
+    /* Slide in to position */
+}
+
+.slide-exit {
+    @apply opacity-100 translate-x-0;
+    /* Start in place */
+}
+
+.slide-exit-active {
+    @apply opacity-0 translate-x-full transition-transform duration-500 ease-in-out;
+    /* Slide out to the right */
+}
+/* src/styles/transition.css */
+
+/* Scale Transition */
+.scale-enter {
+  @apply opacity-0 scale-75; /* Start small and invisible */
+}
+
+.scale-enter-active {
+  @apply opacity-100 scale-100 transition-transform duration-500 ease-in-out; /* Scale up to full size */
+}
+
+.scale-exit {
+  @apply opacity-100 scale-100; /* Start fully visible and normal size */
+}
+
+.scale-exit-active {
+  @apply opacity-0 scale-75 transition-transform duration-500 ease-in-out; /* Scale down and fade out */
+}
