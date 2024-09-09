@@ -6,7 +6,7 @@ const HexagonPhotoFrame = ({ src, alt, title }) => {
       <div className="relative w-[500px] h-[700px] group  inset-0  ">
         {/* Background with glowing border and pulsing effect */}
         <div className="absolute inset-0 bg-black clip-hexagon group-hover:rotate-45 transition-transform duration-700 ease-in-out">
-          <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-pulse"></div>
+          <div className="absolute inset-0 border-4 border-black rounded-full animate-pulse"></div>
         </div>
         <div className="absolute inset-0 border-4 border-white group-hover:border-gray-400  object-cover w-full h-full clip-hexagon transition-transform duration-700 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg "></div>
 

@@ -10,22 +10,26 @@ const Index = () => {
   const location = useLocation();
 
   return (
-    <SwitchTransition>
-      <CSSTransition
-        key={location.key}
-        classNames="scale"
-        timeout={300}
-        unmountOnExit
-      >
-        <div>
-          <Routes location={location}>
-            <Route path="/" element={<Portfolio />} />
-            <Route path="/explore" element={<Explore />} />
-            <Route path="/know" element={<Add1 />} />
-          </Routes>
-        </div>
-      </CSSTransition>
-    </SwitchTransition>
+    <>
+      <SwitchTransition>
+        <CSSTransition
+          key={location.key}
+          classNames="scale"
+          timeout={300}
+          unmountOnExit
+        >
+          <div>
+            <Routes location={location}>
+              <Route path="/" element={<Portfolio />} />
+            </Routes>
+          </div>
+        </CSSTransition>
+      </SwitchTransition>
+      <Routes>
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/know" element={<Add1 />} />
+      </Routes>
+    </>
   );
 };
 

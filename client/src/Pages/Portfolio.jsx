@@ -6,13 +6,12 @@ import { Link } from "react-router-dom";
 import FadeTransition from "../Components/FadeTransition";
 import { useState } from "react";
 import { GiAnimalSkull } from "react-icons/gi";
-import bird from "../Animations/bird.json";
+import b from "../Animations/b.json";
 
 const Portfolio = () => {
   const [show, setShow] = useState(true);
   return (
     <>
-      
       <div className="text-4xl p-2">
         <FadeTransition in={show}>
           <div className="grid grid-flow-row">
@@ -24,7 +23,9 @@ const Portfolio = () => {
                 <h2 className="text-3xl font-thin grid justify-end ">
                   My Portfolio
                 </h2>
-                <Lottie animationData={Animation} />
+                <div className="">
+                  <Lottie animationData={Animation} />
+                </div>
                 <div className="text-4xl font-thin grid  justify-center py-5 ">
                   <p>Hi I'm Maher Hazbaz</p>
                 </div>
