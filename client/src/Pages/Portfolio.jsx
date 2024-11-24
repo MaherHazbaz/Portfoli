@@ -33,7 +33,7 @@ const Portfolio = () => {
                   My Portfolio
                 </h2>
 
-                <div className="text-8xl font-semibold  justify-start p-10 flex">
+                <div className="text-8xl font-semibold text-gray-800 justify-start p-10 flex">
                   <p>Hi,</p>
                 </div>
                 <div className="text-6xl font-thin flex justify-end ">

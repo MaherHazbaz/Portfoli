@@ -12,7 +12,7 @@ const Resume = () => {
 
         {/* Main Content */}
         <div className="flex-1 flex flex-col items-center justify-center bg-gray-50">
-          <h1 className="text-3xl font-bold mb-6">
+          <h1 className="text-4xl font-thin mb-6">
             Download or View My Resume
           </h1>
           <div className="space-x-4">

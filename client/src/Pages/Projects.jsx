@@ -54,10 +54,30 @@ const Projects = () => {
           <div className=" text-3xl ">
             <h1>Projects</h1>
             <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-10 sm:p-14 justify-items-center text-2xl sm:text-3xl font-thin rounded-lg">
-              <Frame imageUrl={vg} label={"Virtual Garden"} />
-              <Frame imageUrl={ec} label={"E-Commerce website"} />
-              <Frame imageUrl={ap} label={"HASS"} />
-              <Frame imageUrl={vs} label={"Vision Mate"} />
+              <Frame
+                imageUrl={vg}
+                label={
+                  "Virtual Garden Website for Medicinal Plants for educational purposes(Smart India Hackathon)"
+                }
+              />
+              <Frame
+                imageUrl={ec}
+                label={
+                  "E-Commerce Website ( Scalable e-commerce website with dynamic product data management)"
+                }
+              />
+              <Frame
+                imageUrl={ap}
+                label={
+                  "Optimizing Hospital Appointment Scheduling System  using RFID tags, facial recognition, and AI "
+                }
+              />
+              <Frame
+                imageUrl={vs}
+                label={
+                  " VisionMate: Enhancing Accessibility for the Visually Impaired with Real-Time Object Detection"
+                }
+              />
             </div>
           </div>
           <div className="p-7 text-3xl">
