@@ -5,6 +5,15 @@ import vg from "../Images/vg.jpg"
 import ec from "../Images/ec.jpg"
 import ap from "../Images/ap.jpg"
 import vs from "../Images/vs.jpg"
+import re from "../Images/re.jpg"
+import js from "../Images/js.jpg"
+import no from "../Images/no.jpg"
+import mo from "../Images/mo.jpg"
+import iot from "../Images/iot.jpg"
+import web from "../Images/web.jpg"
+import uiux from "../Images/UIUX.jpg"
+import nptel from "../Images/NPTEL.jpg"
+import java from "../Images/java.jpg"
 
 const Frame = ({ imageUrl, link, label }) => (
   <div className="text-center">
@@ -29,17 +38,55 @@ const Projects = () => {
     <>
       <div className="flex h-screen">
         {/* Left-side Navbar */}
-        <div className=" flex flex-col items-center">
+        <div className=" flex flex-col items-center ">
           <Navbar />
         </div>
+        <div className="grid grid-flow-row">
+          <div className="p-7 text-3xl ">
+            <h1>Skills</h1>
+            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-10 sm:p-14 justify-items-center text-2xl sm:text-3xl font-thin rounded-lg ">
+              <Frame imageUrl={js} label={"Java Script"} />
+              <Frame imageUrl={re} label={"React.Js"} />
+              <Frame imageUrl={no} label={"Node.Js"} />
+              <Frame imageUrl={mo} label={"Mongo DB"} />
+            </div>
+          </div>
+          <div className=" text-3xl ">
+            <h1>Projects</h1>
+            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-10 sm:p-14 justify-items-center text-2xl sm:text-3xl font-thin rounded-lg">
+              <Frame imageUrl={vg} label={"Virtual Garden"} />
+              <Frame imageUrl={ec} label={"E-Commerce website"} />
+              <Frame imageUrl={ap} label={"HASS"} />
+              <Frame imageUrl={vs} label={"Vision Mate"} />
+            </div>
+          </div>
+          <div className="p-7 text-3xl">
+            <h1>Internships</h1>
+            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-10 sm:p-14 justify-items-center text-2xl sm:text-3xl font-thin rounded-lg">
+              <Frame
+                imageUrl={iot}
+                label={"Android Application Development with IoT"}
+              />
 
-        <div className="p-7 text-3xl">
-          <h1>Projects</h1>
-          <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-10 sm:p-14 justify-items-center text-2xl sm:text-3xl font-thin rounded-lg">
-            <Frame imageUrl={vg} label={"Virtual Garden"} />
-            <Frame imageUrl={ec} label={"E-Commerce Website"} />
-            <Frame imageUrl={ap} label ={"HASS"}  />
-            <Frame imageUrl={vs} label={"Vision Mate"} />
+              <Frame imageUrl={web} label={"Web Developement(MERN Stack)"} />
+            </div>
+          </div>
+          <div className="p-7 text-3xl">
+            <h1>Workshops</h1>
+            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-10 sm:p-14 justify-items-center text-2xl sm:text-3xl font-thin rounded-lg">
+              <Frame
+                imageUrl={uiux}
+                label={
+                  "UI/UX design workshop on creating application interfaces"
+                }
+              />
+
+              <Frame
+                imageUrl={nptel}
+                label={"NPTEL course on Software Testing"}
+              />
+              <Frame imageUrl={java} label={"Workshop on Java Programming"} />
+            </div>
           </div>
         </div>
       </div>

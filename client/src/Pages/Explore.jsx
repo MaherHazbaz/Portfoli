@@ -26,12 +26,14 @@ const Explore = () => {
           </div>
 
           {/* Main Content Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="flex flex-auto gap-28">
+            {/* Profile Image */}
+            <div className="flex justify-center items-center">
+              <PhotoFrame src={profile} />
+            </div>
             {/* Text Content */}
             <div className="text-lg md:text-2xl lg:text-3xl font-thin">
-              <h1 className="text-5xl font-light animate-slideInDown">
-                Maher Hazbaz
-              </h1>
+              <h1 className="text-5xl font-light ">Maher Hazbaz</h1>
               <h2 className="text-2xl mt-2">Web Developer</h2>
               <p className="mt-5">
                 Dynamic and ambitious Software Engineer with a passion for
@@ -42,22 +44,15 @@ const Explore = () => {
                 Seeking opportunities to gain hands-on experience and make a
                 meaningful impact in the tech industry.
               </p>
-              
+
               <a
                 href="https://www.instagram.com/maherhazbaz?igsh=bHpha2VwZ2l6NGUz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center mt-5"
               >
-                
                 <Lottie animationData={insta} className="h-100 w-60" loop />
-                
               </a>
-            </div>
-
-            {/* Profile Image */}
-            <div className="flex justify-center items-center">
-              <PhotoFrame src={profile} />
             </div>
           </div>
         </div>

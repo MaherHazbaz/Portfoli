@@ -7,6 +7,8 @@ import Add1 from "./Add1";
 import "../styles/transition.css"; // Import the transition CSS
 
 import Projects from "./Projects";
+import Contact from "./Contact";
+import Resume from "./Resume";
 
 const Index = () => {
   const location = useLocation();
@@ -24,7 +26,9 @@ const Index = () => {
       <Routes>
         <Route path="/explore" element={<Explore />} />
         <Route path="/know" element={<Add1 />} />
+        <Route path="/contact" element={<Contact/>}/>
         
+        <Route path="/resume" element={<Resume/>}/>
         <Route path="/projects" element={<Projects/>}/>
       </Routes>
     </>
