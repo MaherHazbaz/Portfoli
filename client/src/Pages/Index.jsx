@@ -6,28 +6,26 @@ import Explore from "./Explore";
 import Add1 from "./Add1";
 import "../styles/transition.css"; // Import the transition CSS
 
+import Projects from "./Projects";
+
 const Index = () => {
   const location = useLocation();
 
   return (
     <>
-      <SwitchTransition>
-        <CSSTransition
-          key={location.key}
-          classNames="scale"
-          timeout={300}
-          unmountOnExit
-        >
+      
+        
           <div>
             <Routes location={location}>
               <Route path="/" element={<Portfolio />} />
             </Routes>
           </div>
-        </CSSTransition>
-      </SwitchTransition>
+      
       <Routes>
         <Route path="/explore" element={<Explore />} />
         <Route path="/know" element={<Add1 />} />
+        
+        <Route path="/projects" element={<Projects/>}/>
       </Routes>
     </>
   );
