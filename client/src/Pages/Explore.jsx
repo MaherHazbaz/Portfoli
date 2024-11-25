@@ -8,6 +8,8 @@ import profile from "../Images/profile.jpg";
 import CustomButton from "../Components/CustomButton";
 import Navbar from "../Layouts/Navbar";
 import insta from "../Animations/insta.json";
+import ima from "../Images/11.jpg"
+import pro from "../Images/pro.png"
 
 const Explore = () => {
   return (
@@ -29,7 +31,7 @@ const Explore = () => {
           <div className="flex flex-auto gap-28">
             {/* Profile Image */}
             <div className="flex justify-center items-center">
-              <PhotoFrame src={profile} />
+              <PhotoFrame src={pro} />
             </div>
             {/* Text Content */}
             <div className="text-lg md:text-2xl lg:text-3xl font-thin">

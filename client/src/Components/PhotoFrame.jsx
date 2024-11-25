@@ -1,25 +1,22 @@
 import React from "react";
 
-const HexagonPhotoFrame = ({ src, alt, title }) => {
+const RectangularPhotoFrame = ({ src, alt, title }) => {
   return (
-    <div className="relative flex justify-center items-center p-1 max-w-sm mx-auto">
-      <div className="relative w-[700px] h-[700px] group  inset-0  ">
-        {/* Background with glowing border and pulsing effect */}
-        <div className="absolute inset-0 bg-transparent clip-hexagon group-hover:rotate-45 transition-transform duration-700 ease-in-out">
-          <div className="absolute inset-0 border-4 border-black rounded-full animate-pulse"></div>
+    <div className="relative flex justify-center items-center p-4 mx-auto">
+      {/* Frame Container */}
+      <div className="relative group w-[300px] sm:w-[400px] md:w-[500px]">
+        {/* Image with Hover Effect */}
+        <div className="transition-transform duration-500 group-hover:scale-105 group-hover:z-10">
+          <img
+            src={src}
+            alt={alt}
+            className="w-full h-full object-cover rounded-md shadow-none"
+          />
         </div>
-        <div className="absolute inset-0 border-4 border-white group-hover:border-gray-400  object-cover w-full h-full clip-hexagon transition-transform duration-700 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg "></div>
 
-        {/* Image with zoom effect and subtle shadow */}
-        <img
-          src={src}
-          alt={alt}
-          className="absolute inset-0 object-cover w-full h-full clip-hexagon transition-transform duration-700 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg "
-        />
-
-        {/* Title with fade-in and slide-up effect */}
+        {/* Title Overlay */}
         {title && (
-          <div className="absolute bottom-4 left-4 bg-black bg-opacity-75 text-white px-4 py-2 rounded-lg text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out transform group-hover:translate-y- group-hover:translate-y-2">
+          <div className="absolute bottom-4 left-4 bg-white bg-opacity-70 text-black px-4 py-2 rounded-none text-lg font-semibold shadow-none opacity-0 group-hover:opacity-100 transition-opacity duration-700">
             {title}
           </div>
         )}
@@ -28,4 +25,4 @@ const HexagonPhotoFrame = ({ src, alt, title }) => {
   );
 };
 
-export default HexagonPhotoFrame;
+export default RectangularPhotoFrame
