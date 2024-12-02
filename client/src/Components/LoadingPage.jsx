@@ -5,11 +5,18 @@ import loading from "../Animations/loading.json";
 const LoadingPage = ({ isModelLoaded }) => {
   const [isLoading, setIsLoading] = useState(true);
 
-  // Simulate loading process or listen for the model load completion
   useEffect(() => {
+    const handlePageLoad = () => {
+      setIsLoading(false); // Hide loader when the page is fully loaded
+    };
+
     if (isModelLoaded) {
-      setIsLoading(false); // Hide loader when the model is loaded
+      window.addEventListener("load", handlePageLoad);
     }
+
+    return () => {
+      window.removeEventListener("load", handlePageLoad);
+    };
   }, [isModelLoaded]);
 
   return (
