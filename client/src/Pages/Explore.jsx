@@ -35,16 +35,31 @@ const Explore = () => {
 
             {/* Text Content */}
             <div className="text-lg md:text-2xl lg:text-3xl font-thin">
-              <h1 className="text-5xl font-light">Maher Hazbaz</h1>
-              <h2 className="text-2xl mt-2">Web Developer</h2>
-              <p className="mt-8">
-                Dynamic and ambitious Software Engineer with a passion for
-                problem-solving and innovation. Proficient in multiple
-                programming languages like JavaScript, HTML, CSS, React.js,
-                Node.js. A strong collaborator with excellent communication
-                skills, and ready to contribute to a dynamic team environment.
-                Seeking opportunities to gain hands-on experience and make a
-                meaningful impact in the tech industry.
+              <h1 className="text-5xl font-light">
+                Maher Hazbaz<h2 className="text-3xl mt-2 px-56 ">Developer</h2>
+              </h1>
+
+              <p className="mt-8 text-2xl">
+                Hi, I’m Maher Hazbaz, a passionate and detail-oriented Computer
+                Science Engineering student at DMI Engineering College, Anna
+                University, set to graduate in 2025 with a current CGPA of 8.13.
+                My journey in tech revolves around crafting intuitive and
+                visually appealing user experiences through my expertise in
+                UI/UX design and web development. I have hands-on experience in
+                MERN Stack and Three.js, coupled with internship projects in
+                Android application development with IoT and web development. My
+                portfolio includes innovative projects like a hospital
+                appointment scheduling system, a virtual garden website, and an
+                e-commerce platform. I thrive in building responsive and
+                interactive interfaces using React.js and Tailwind CSS,
+                continuously pushing boundaries with 3D models and animations.
+                My focus is on delivering seamless user experiences and
+                leveraging modern technologies to solve real-world problems.{" "}
+                <br />
+                <br />
+                <p className="text-2xl font-semibold text-gray-800">
+                  Let’s create something amazing together!
+                </p>
               </p>
             </div>
           </div>
