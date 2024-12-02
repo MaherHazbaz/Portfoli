@@ -1,13 +1,13 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Portfolio from "./Portfolio";
-import Explore from "./Explore";
-import Add1 from "./Add1";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import Resume from "./Resume";
 import LoadingPage from "../Components/LoadingPage";
 
+const Portfolio = lazy(() => import("../Pages/Portfolio"));
+const Explore = lazy(() => import("./Explore"));
+const Add1 = lazy(() => import("./Add1"));
+const Projects = lazy(() => import("./Projects"));
+const Contact = lazy(() => import("./Contact"));
+const Resume = lazy(() => import("./Resume"));
 
 const Index = () => {
   const location = useLocation();
