@@ -4,23 +4,23 @@ import Navbar from "../Layouts/Navbar";
 const Resume = () => {
   return (
     <>
-      <div className="flex h-screen">
+      <div className="grid grid-flow-col md:flex-row h-screen">
         {/* Left-side Navbar */}
-        <div className="flex flex-col items-center">
+        <div className="  bg-transparent">
           <Navbar />
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 flex flex-col items-center justify-center bg-gray-50">
-          <h1 className="text-4xl font-thin mb-6">
+        <div className="flex-1 flex flex-col items-start justify-center  md:p-5">
+          <h1 className="text-2xl md:text-4xl font-thin mb-6 text-center ite">
             Download or View My Resume
           </h1>
-          <div className="space-x-4">
+          <div className="space-y-4 md:space-x-4 md:space-y-0 flex flex-col md:flex-row px-16">
             {/* Download Button */}
             <a
               href="/Documents/Resume.pdf"
               download="MaherResume.pdf"
-              className="bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition"
+              className="bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition text-center"
             >
               Download Resume
             </a>
@@ -30,7 +30,7 @@ const Resume = () => {
               href="/Documents/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-600 transition"
+              className="bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-600 transition text-center"
             >
               View Resume
             </a>
