@@ -36,7 +36,10 @@ const Explore = () => {
             {/* Text Content */}
             <div className="text-lg md:text-2xl lg:text-3xl font-thin">
               <h1 className="text-5xl font-light">
-                Maher Hazbaz<h2 className="text-3xl mt-2 px-56 ">Developer</h2>
+                Maher Hazbaz
+                <h2 className="text-3xl mt-2 px-56 text-gray-800 font-normal ">
+                  Developer
+                </h2>
               </h1>
 
               <p className="mt-8 text-2xl">

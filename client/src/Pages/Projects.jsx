@@ -51,33 +51,41 @@ const Projects = () => {
               <Frame imageUrl={mo} label={"Mongo DB"} />
             </div>
           </div>
-          <div className=" text-3xl ">
+          <div className="text-3xl">
             <h1>Projects</h1>
             <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-10 sm:p-14 justify-items-center text-2xl sm:text-3xl font-thin rounded-lg">
-              <Frame
-                imageUrl={vg}
-                label={
-                  "Virtual Garden Website for Medicinal Plants for educational purposes(Smart India Hackathon)"
-                }
-              />
-              <Frame
-                imageUrl={ec}
-                label={
-                  "E-Commerce Website ( Scalable e-commerce website with dynamic product data management)"
-                }
-              />
-              <Frame
-                imageUrl={ap}
-                label={
-                  "Optimizing Hospital Appointment Scheduling System  using RFID tags, facial recognition, and AI "
-                }
-              />
-              <Frame
-                imageUrl={vs}
-                label={
-                  " VisionMate: Enhancing Accessibility for the Visually Impaired with Real-Time Object Detection"
-                }
-              />
+              <Link to="/vg">
+                <Frame
+                  imageUrl={vg}
+                  label={
+                    "Virtual Garden Website for Medicinal Plants for educational purposes(Smart India Hackathon)"
+                  }
+                />
+              </Link>
+              <Link to="/ec">
+                <Frame
+                  imageUrl={ec}
+                  label={
+                    "E-Commerce Website (Scalable e-commerce website with dynamic product data management)"
+                  }
+                />
+              </Link>
+              <Link to="/ap">
+                <Frame
+                  imageUrl={ap}
+                  label={
+                    "Optimizing Hospital Appointment Scheduling System using RFID tags, facial recognition, and AI"
+                  }
+                />
+              </Link>
+              <Link to="/vs">
+                <Frame
+                  imageUrl={vs}
+                  label={
+                    "VisionMate: Enhancing Accessibility for the Visually Impaired with Real-Time Object Detection"
+                  }
+                />
+              </Link>
             </div>
           </div>
           <div className="p-7 text-3xl">
