@@ -15,12 +15,7 @@ const Portfolio = () => {
     <>
       <div className="flex h-screen">
         {/* Full-screen Background Animation */}
-        <div className="absolute -outline-offset-8">
-          <Lottie
-            animationData={sea}
-            className="w-full h-full object-center"
-          />
-        </div>
+       
 
         {/* Left-side Navbar */}
         <div className="flex flex-col items-center relative z-10">
@@ -67,6 +62,12 @@ const Portfolio = () => {
     </div>
   </div>
 </div>
+        <div className="absolute bottom-0">
+          <Lottie
+            animationData={sea}
+            className="w-full h-full object-bottom"
+          />
+        </div>
 
 
       </div>
