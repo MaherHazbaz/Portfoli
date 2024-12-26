@@ -41,7 +41,7 @@ const Portfolio = () => {
         </nav>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden flex flex-col items-center w-full relative">
+        <div className="md:hidden flex flex-col items-center w-full h-4 relative">
           <button
             className="text-gray-800 text-3xl focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -50,7 +50,7 @@ const Portfolio = () => {
           </button>
 
           {isMenuOpen && (
-            <nav className="flex flex-col space-y-6 mt-5 items-center bg-transparent py-4 px-6 rounded-none shadow-2xl justify-between">
+            <nav className="flex flex-col space-y-6 mt-5 items-center bg-gray-50 py-4 px-6 rounded-sm shadow-2xl justify-between relative">
               {[
                 { to: "/", icon: <GoHome />, label: "Home" },
                 { to: "/explore", label: "About", icon: <CgProfile /> },

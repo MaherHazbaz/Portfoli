@@ -36,14 +36,14 @@ const Frame = ({ imageUrl, link, label }) => (
 
 const Projects = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[auto,1fr] h-full">
+    <div className="grid grid-flow-col md:flex-row h-screen">
       {/* Left-side Navbar */}
-      <div className="bg-gray-50">
+      <div className="  bg-transparent">
         <Navbar />
       </div>
 
-      {/* Main Content */}
-      <div className="p-5 sm:p-10 lg:p-14">
+      {/* Main Content with top margin */}
+      <div className=" px-5 sm:px-10 lg:px-10 mt-10">
         {/* Skills Section */}
         <div className="text-3xl mb-10">
           <h1>Skills</h1>
@@ -93,7 +93,6 @@ const Projects = () => {
             </Link>
           </div>
         </div>
-
 
         {/* Internships Section */}
         <div className="text-3xl mb-10">

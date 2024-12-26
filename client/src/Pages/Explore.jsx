@@ -20,9 +20,9 @@ const Explore = () => {
 
   return (
     <>
-      <div className="flex h-screen">
+      <div className="flex h-screen ">
         {/* Left-side Navbar */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start ">
           <Navbar />
         </div>
 

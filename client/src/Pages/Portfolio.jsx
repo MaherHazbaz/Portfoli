@@ -18,7 +18,7 @@ const Portfolio = () => {
        
 
         {/* Left-side Navbar */}
-        <div className="flex flex-col items-center relative z-10">
+        <div className="flex flex-col items-center relative z-10 ">
           <Navbar />
         </div>
 
