@@ -27,10 +27,10 @@ const RightNavbar = () => {
                     {/* Social Links */}
                     {[
                         { icon: linkedin, url: "https://www.linkedin.com/in/maher-hazbaz-4949832ba/" },
-                        { icon: instagram, url: "https://www.instagram.com/your-profile" },
+                        { icon: instagram, url: "https://www.instagram.com/maherhazbaz/" },
                         { icon: gmail, url: "mailto:maherhazbaz7@gmail.com" },
                         { icon: github, url: "https://github.com/MaherHazbaz" },
-                        { icon: github, url: "https://github.com/your-profile" },
+                        { icon: github, url: "https://github.com/MaherHazbaz" },
                     ].map((item, index) => (
                         <div key={index} className="relative group flex flex-col items-center">
                             <a
