@@ -16,7 +16,9 @@ const Portfolio = () => {
     <>
       <div className="flex h-screen">
         {/* Full-screen Background Animation */}
-       
+        <div className="absolute inset-0 w-full h-full ">
+          <SplineAnimation />
+        </div>
 
         {/* Left-side Navbar */}
         <div className="flex flex-col items-center relative z-10 ">
@@ -28,7 +30,7 @@ const Portfolio = () => {
   <div className="flex-1 text-4xl p-5 relative z-10">
     <div className="grid grid-flow-row">
       <div className="grid justify-start">
-        <div className="grid-flow-col justify-center">
+                <div className="grid-flow-col justify-center relative z-10 pointer-events-none">
           {/* Main Heading */}
           <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-thin grid justify-start">
             Welcome to
@@ -50,6 +52,8 @@ const Portfolio = () => {
           </div>
 
           {/* Button */}
+          
+          </div>
           <div className="grid justify-center animate-slideInUp text-base sm:text-lg md:text-xl lg:text-2xl py-4 sm:py-6 md:py-7">
             <Link to={"/projects"}>
               <CustomButton
@@ -57,15 +61,12 @@ const Portfolio = () => {
                 button={"Explore More"}
               />
             </Link>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-        <div className="absolute h-screen w-screen">
-          <SplineAnimation />
-        </div>
+       
 
 
       </div>

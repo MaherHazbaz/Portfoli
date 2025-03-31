@@ -18,7 +18,7 @@ const Resume = () => {
           <div className="space-y-4 md:space-x-4 md:space-y-0 flex flex-col md:flex-row px-16">
             {/* Download Button */}
             <a
-              href="/Documents/Resume.pdf"
+              href="/Documents/Resume Updated.pdf"
               download="MaherResume.pdf"
               className="bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition text-center"
             >
@@ -27,7 +27,7 @@ const Resume = () => {
 
             {/* View Button */}
             <a
-              href="/Documents/Resume.pdf"
+              href="/Documents/Resume Updated.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-600 transition text-center"

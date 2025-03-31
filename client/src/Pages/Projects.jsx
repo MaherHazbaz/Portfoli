@@ -14,6 +14,8 @@ import web from "../Images/web.jpg";
 import uiux from "../Images/UIUX.jpg";
 import nptel from "../Images/NPTEL.jpg";
 import java from "../Images/java.jpg";
+import aiml from "../Images/aiml.png"
+import ts from "../Images/Translatify.png"
 
 const Frame = ({ imageUrl, link, label }) => (
   <div className="text-center">
@@ -91,6 +93,14 @@ const Projects = () => {
                 }
               />
             </Link>
+            <Link to="/Ts">
+              <Frame
+                imageUrl={ts}
+                label={
+                  "Translatify: Breaking Language Barriers in Media Playback"
+                }
+              />
+            </Link>
           </div>
         </div>
 
@@ -106,6 +116,11 @@ const Projects = () => {
             <Frame
               imageUrl={web}
               label={"Web Development (MERN Stack)"}
+              link="/internships/web-development"
+            />
+            <Frame
+              imageUrl={aiml}
+              label={"Artificial Intelligence and MachineLearning"}
               link="/internships/web-development"
             />
           </div>

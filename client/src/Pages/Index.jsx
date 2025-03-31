@@ -5,6 +5,7 @@ import Vs from "./Vs";
 import Vg from "./Vg";
 import Ap from "./Ap";
 import Ec from "./Ec";
+import Ts from "./Ts";
 
 const Portfolio = lazy(() => import("../Pages/Portfolio"));
 const Explore = lazy(() => import("./Explore"));
@@ -29,6 +30,7 @@ const Index = () => {
         <Route path="/vg" element={<Vg />} />
         <Route path="/ap" element={<Ap />} />
         <Route path="/ec" element={<Ec />} />
+        <Route path="/Ts" element={<Ts/>}/>
       </Routes>
     </Suspense>
   );
