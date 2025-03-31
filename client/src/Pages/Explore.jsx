@@ -4,11 +4,8 @@ import Lottie from "lottie-react";
 import PhotoFrame from "../Components/PhotoFrame";
 import Navbar from "../Layouts/Navbar";
 import pro from "../Images/pro.png";
-import linkedin from "../Animations/linkedin.json";
-import instagram from "../Animations/instagram.json";
-import gmail from "../Animations/gmail.json";
-import github from "../Animations/github.json";
-import { IoArrowBackCircleOutline } from "react-icons/io5";
+import pop from "../Images/pop.jpg"
+import profil from '../Images/profil.jpg'
 import RightNavbar from "../Layouts/RightNavbar";
 
 const Explore = () => {

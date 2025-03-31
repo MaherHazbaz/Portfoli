@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.4",
+    "@splinetool/react-spline": "^4.0.0",
     "axios": "^1.7.7",
     "dom": "^0.0.3",
     "icons": "^1.0.0",

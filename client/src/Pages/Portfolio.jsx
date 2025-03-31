@@ -7,6 +7,7 @@ import FadeTransition from "../Components/FadeTransition";
 import { useState } from "react";
 import Navbar from "../Layouts/Navbar";
 import sea from "../Animations/wvv.json";
+import SplineAnimation from "../Components/SplineAnimation";
 
 const Portfolio = () => {
   const [show, setShow] = useState(true);
@@ -62,11 +63,8 @@ const Portfolio = () => {
     </div>
   </div>
 </div>
-        <div className="absolute bottom-0">
-          <Lottie
-            animationData={sea}
-            className="w-full h-full object-bottom"
-          />
+        <div className="absolute h-screen w-screen">
+          <SplineAnimation />
         </div>
 
 
